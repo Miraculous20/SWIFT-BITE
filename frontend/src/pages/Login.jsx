@@ -3,6 +3,8 @@ import { useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import API from "../api";
+API.post("/auth/login", form);
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });

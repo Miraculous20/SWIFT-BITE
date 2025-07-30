@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import API from "../api";
+API.post("/auth/login", form);
 
 export default function Restaurants() {
   const [restaurants, setRestaurants] = useState([]);
